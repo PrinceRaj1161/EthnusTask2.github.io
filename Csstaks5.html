@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Task-5</title>
+    <style>
+        :root
+        {
+            --color-1: #EAD637;
+            --color-2: #7b1ecb;
+        }
+
+        .container
+        {
+            display: flex;
+        }
+
+        body
+        {
+            background-color: var(--color-1);
+        }
+
+        .child-1
+        {
+            margin-top: 20px;
+            padding-right: 20px;
+            padding-left: 10px;
+        }
+
+        .child-2
+        {
+            color: var(--color-2);
+        }
+
+
+        hr
+        {
+            border:1px solid ;
+        }
+
+        a
+        {
+            background-color: white;
+            display: block;
+            text-decoration: none;
+            background: white;
+            margin-bottom: 10px;
+            border-right: 15px solid black;
+            max-width: 150px;
+            padding-right: 16px;
+            font-size: large;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="child-1">
+            <a href="#">Home Page</a>
+            <a href="#">Musings</a>
+            <a href="#">My town</a>
+            <a href="#">Links</a>
+        </div>
+        <div class="child-2">
+            <h2>My first styled page</h2>
+            <p>Welcome to my styled page</p>
+            <p>It lacks images, but at least it has style. And it have links, even if they don't go anywhere...</p>
+            <p>There should be more here, but I don't know what yet.</p>
+            <hr>
+            <i>Made 5 April 2004</i>
+            <br>
+            <i>by myself</i>
+        </div>
+    </div>
+</body>
+</html>

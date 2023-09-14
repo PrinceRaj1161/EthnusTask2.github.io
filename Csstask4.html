@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Task-4</title>
+    <style>
+        .section
+        {
+            max-width: 400px;
+            margin: 0 auto;
+            z-index: -1;
+        }
+
+
+        .nav
+        {
+            height: 60px;
+            width: 60px;
+            background-color: red;
+            margin-bottom: 10px;
+            border-top-right-radius: 10%;
+            border-bottom-right-radius: 10%;
+            transition: all 1s ;
+        }
+
+        .posi
+        {
+            position: fixed;
+            top: 20px;
+            left: 0px;
+        }
+
+        @media screen and (max-width:600px)
+        {
+            .posi 
+            {
+                position: fixed;
+                top: 140px;
+                left: 0px;
+            }
+        }
+
+        .nav-1
+        {
+            background-color: rgb(50, 168, 129);
+        }
+
+        .nav-2
+        {
+            background-color: rgb(23, 101, 160);
+        }
+
+        .nav-4
+        {
+            background-color:rgb(181, 130, 130);
+        }
+
+
+        .nav:hover
+        {
+            transform: scaleX(1.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="section">
+        <h3>Hoverable Sidenav Buttons</h3>
+        <p>Hover over the buttons in the left side navigation to open them. </p>
+    </div>
+
+    <div class="block">
+        <div class="posi">
+            <div class="nav nav-1"></div>
+            <div class="nav nav-2"></div>
+            <div class="nav nav-3"></div>
+            <div class="nav nav-4"></div>
+        </div>
+    </div>
+</body>
+</html>

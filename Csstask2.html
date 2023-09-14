@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Task-2</title>
+    <style>
+        p
+        {
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        a
+        {
+            text-decoration: none;
+            padding: 2px;
+            padding-right: 25px;
+            font-size: larger;
+        }
+        .nav
+        {
+            background-color: rgb(84, 196, 196);
+            display: block;
+        }
+
+        .nav:hover
+        {
+            background-color: rgb(199, 199, 39);
+            color: white;
+        }
+        .vertical
+        {
+            max-width: 200px;
+            margin-right: 20vw;
+        }
+
+
+        .hor
+        {
+            display: flex;
+        }
+
+        .hnav
+        {
+            background-color: lightgrey;
+            border-right: 0px;
+            padding: 5px;
+            border-right:2px solid aqua;
+        }
+
+        .hnav:hover
+        {
+            color: white;
+            background: grey;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="vertical">
+        <p>Vertical Navigation Bar</p>
+        <a href="#" class="nav nav-1">Home</a>
+        <a href="#" class="nav nav-2">Java</a>
+        <a href="#" class="nav nav-3">CSS</a>
+        <a href="#" class="nav nav-4">HTML</a>
+        <a href="#" class="nav nav-5">Bootstrap</a>
+    </div>
+
+    <p>
+        Horizonal Navigation bar
+    </p>
+
+    <div class="horizontal">
+        <div class="hor">
+            <a href="#" class="hnav hnav-1">Home</a>
+            <a href="#" class="hnav hnav-2">Java</a>
+            <a href="#" class="hnav hnav-3">CSS</a>
+            <a href="#" class="hnav hnav-4">HTML</a>
+            <a href="#" class="hnav hnav-5">Bootstrap</a>
+        </div>
+    </div>
+</body>
+</html>
